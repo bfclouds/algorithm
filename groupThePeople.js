@@ -5,6 +5,8 @@
 // 链接：https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to
 // 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
+// 题型 中等
+
 const groupThePeople = function(groupSizes) {
     let arr = new Map();
     let res = [];

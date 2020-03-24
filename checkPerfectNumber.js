@@ -3,6 +3,8 @@
 //
 // 给定一个 整数 n， 如果他是完美数，返回 True，否则返回 False
 
+// 题型 简单
+
 const checkPerfectNumber = function (nums) {
     if (nums === 1 || nums === 0) {
         return false
