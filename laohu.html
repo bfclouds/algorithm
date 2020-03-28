@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // 找出字符串中的 最长回文字符串
+    function huiwen(strs) {
+        let arr = strs.split('');
+        let i = 2;
+        let res = [];
+        while(i < arr.length){
+            for (let j = 0; j < arr.length - j - 1; j++) {
+                let arrTemp = arr.slice(j, j + i);
+                if (isHuiWen(arrTemp)) {
+                    res = arrTemp;
+                }
+            }
+            i += 1;
+        }
+        res = res.join('')
+        return res;
+    }
+
+    function isHuiWen(arr) {
+        for(let i = 0, j = arr.length - 1; i < j; i++, j--) {
+            if(arr[i] != arr[j]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let strs = 'asdfgfdsazxcvbnmmnbvcx'
+
+    let res = huiwen(strs);
+    console.log(res)
+
+// 奇数在左，偶数在右
+    let arr = [1,2,3,4,5,6,7,8,9];
+    let temp = arr[0];
+    function sort(arr) {
+        if(arr.length <= 1) {
+            return arr;
+        }
+        let l = 0;
+        let r = arr.length - 1;
+        while(l < r) {
+            // 奇数
+            if(arr[r] % 2 === 1) {
+                arr[l] = arr[r];
+                l += 1;
+                while(l < r) {
+                    if (arr[l] % 2 === 0) {
+                        arr[r] = arr[l]
+                        r -= 1;
+                        break;
+                    }else {
+                        l += 1;
+                    }
+                }
+                // console.log(arr)
+            } else {
+                r -= 1;
+            }
+        }
+        arr[r] = temp;
+        return arr;
+    }
+
+    let resSort = sort(arr);
+    console.log(resSort);
+</script>
+</body>
+</html>
