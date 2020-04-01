@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let str = 'My name is x';
+    // function  twoUpper(str) {
+    //     str = str.split(' ');
+    //     let res = [];
+    //     for (let item of str) {
+    //         if (item.length >= 2) {
+    //             item = item.toString().split('')
+    //             item[1] = item[1].toString().toUpperCase();
+    //             item = item.join('')
+    //             res.push(item);
+    //         } else {
+    //             res.push(item);
+    //         }
+    //     }
+    //     res = res.join(' ');
+    //     return res;
+    // }
+    //
+    // let res = twoLower(str);
+    // console.log(res)
+
+    function sumInteger() {
+        // let str = read_line()
+        let str = '1 2 4 4 0 18';
+        str = str.split(' ');
+        str = str.sort((a,b) => {
+            return a - b;
+        });
+        if (str.length <=2) {
+            return false;
+        }
+
+        for (let i = str.length - 1; i >= 2; i--) {
+            let j = 0;
+            let k = str.length - 1;
+            let numI = parseInt(str[i]);
+            while (j < k) {
+                if (k === i) {
+                    k -= 1;
+                    continue;
+                }
+                if (j === i) {
+                    j += 1;
+                    continue;
+                }
+
+                let num = parseInt(str[j]) + parseInt(str[k]);
+                if (num === numI) {
+                    return true
+                }
+                if (num > numI) {
+                    k -= 1;
+                } else {
+                    j += 1;
+                }
+            }
+        }
+        return false;
+    }
+
+    let res = sumInteger()
+    res = res ? 1 : 0;
+    console.log(res);
+</script>
+</body>
+</html>

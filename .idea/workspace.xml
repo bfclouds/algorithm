@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6752c14-38f3-43f5-93f0-f55f74a20c88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/laohu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiecheng.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learn/dva-demoOne" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,11 +52,19 @@
       <workItem from="1584943635417" duration="9313000" />
       <workItem from="1585061972929" duration="2145000" />
       <workItem from="1585145801147" duration="13039000" />
-      <workItem from="1585364196229" duration="3369000" />
+      <workItem from="1585364196229" duration="3533000" />
+      <workItem from="1585377169210" duration="30000" />
+      <workItem from="1585738590454" duration="4806000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="721" y="271" key="FileChooserDialogImpl" timestamp="1585377196921">
+      <screen x="0" y="0" width="1920" height="1026" />
+    </state>
+    <state x="721" y="271" key="FileChooserDialogImpl/0.0.1920.1026@0.0.1920.1026" timestamp="1585377196921" />
   </component>
 </project>
